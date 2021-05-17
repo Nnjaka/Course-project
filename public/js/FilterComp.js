@@ -42,6 +42,6 @@ Vue.component('filter-el', {
                             </div>
                     </details>
                     <input class="header_input" type="text" placeholder="Search for Item..." v-model="userSearch">
-                    <div class="header_button_search"><a href="#"><img src="img/search.png" alt="search"></a></div>
+                    <div class="header_button_search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
                 </form>`
 })

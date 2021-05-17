@@ -559,6 +559,10 @@ a {
   padding-top: 27px;
 }
 
+.stock_product:hover {
+  outline: 1px solid #f16d7f;
+}
+
 .stock_text {
   height: 82px;
   background-color: #ffffff;
@@ -587,24 +591,27 @@ a {
 }
 
 .block1_product1 {
-  height: 542px;
+  height: 515px;
   background-image: url(../img/bl1_pr1.png);
-  padding-right: 20px;
+  margin-right: 20px;
+  margin-bottom: 27px;
 }
 
 .block1_product2 {
-  height: 261px;
+  height: 234px;
   background-image: url(../img/bl1_pr2.png);
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .block2_product1 {
-  height: 261px;
+  height: 235px;
+  margin-bottom: 26px;
   background-image: url(../img/bl2_pr1.png);
 }
 
 .block2_product2 {
-  height: 542px;
+  height: 515px;
+  margin-bottom: 26px;
   background-image: url(../img/bl2_pr2.png);
 }
 
@@ -1147,6 +1154,10 @@ a {
 
 .fa-icon {
   color: #b2b2b2;
+}
+
+.fa-search:hover {
+  color: #f16d7f;
 }
 
 /*--Каталог--*/

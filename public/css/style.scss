@@ -475,6 +475,10 @@ a {
         background-repeat: no-repeat;
         display: flex;
         padding-top: 27px;
+
+        &:hover {
+            outline: 1px solid $colorPink;
+        }
     }
 
     &_text {
@@ -506,24 +510,27 @@ a {
 }
 
 .block1_product1 {
-    height: 542px;
+    height: 515px;
     background-image: url(../img/bl1_pr1.png);
-    padding-right: 20px;
+    margin-right: 20px;
+    margin-bottom: 27px;    
 }
 
 .block1_product2 {
-    height: 261px;
+    height: 234px;
     background-image: url(../img/bl1_pr2.png);
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .block2_product1 {
-    height: 261px;
+    height: 235px;
+    margin-bottom: 26px;
     background-image: url(../img/bl2_pr1.png);
 }
 
 .block2_product2 {
-    height: 542px;
+    height: 515px;
+    margin-bottom: 26px;
     background-image: url(../img/bl2_pr2.png);
 }
 
@@ -993,6 +1000,10 @@ a {
 
 .fa-icon {
     color: #b2b2b2;
+}
+
+.fa-search:hover {
+    color: $colorPink;
 }
 
 
@@ -2191,3 +2202,4 @@ input[type=number]::-webkit-outer-spin-button {
 input[type='number'] {
     -moz-appearance: textfield;
 }
+
