@@ -1,0 +1,47 @@
+[
+  {
+    "id_product": 11,
+    "product_name": "men's windbreaker",
+    "price": 50
+  },
+  {
+    "id_product": 12,
+    "product_name": "jacket with pockets",
+    "price": 49
+  },
+  {
+    "id_product": 3,
+    "product_name": "quilted jacket",
+    "price": 52
+  },
+  {
+    "id_product": 13,
+    "product_name": "monochrome t-shirt",
+    "price": 35
+  },
+  {
+    "id_product": 8,
+    "product_name": "white shorts",
+    "price": 31
+  },
+  {
+    "id_product": 14,
+    "product_name": "bomber",
+    "price": 44
+  },
+  {
+    "id_product": 6,
+    "product_name": "linen jacket",
+    "price": 48
+  },
+  {
+    "id_product": 15,
+    "product_name": "cardigan",
+    "price": 48
+  },
+  {
+    "id_product": 16,
+    "product_name": "blue t-shirt",
+    "price": 35
+  }
+]

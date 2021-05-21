@@ -1,10 +1,8 @@
 Vue.component('products', {
     data() {
         return {
-            catalogUrl: '/catalogData.json',
             filtered: [],
-            products: [],
-            imgProduct: 'https://placehold.it/200x150'
+            products: []
         }
     },
     mounted() {
@@ -34,7 +32,7 @@ Vue.component('products', {
 Vue.component('product', {
     props: ['product', 'img'],
     template: ` <div class="galery_product">
-                    <a href="#" class="galery_link">
+                    <a href="../single_page.html" class="galery_link">
                         <img :src="img" class="galery_product_img" alt="img_photo">
                     </a>
                     <div class="product_info">
