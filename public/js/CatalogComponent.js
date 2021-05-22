@@ -1,4 +1,4 @@
-Vue.component('catalog', {
+Vue.component('catalog-products', {
   data() {
     return {
       filtered: [],
@@ -22,14 +22,14 @@ Vue.component('catalog', {
     }
   },
   template: `<div class="cat_galery_products">
-                <catalog-item v-for = "item of filtered"
+                <catalog-product v-for = "item of filtered"
                 :key="item.id_product"
                 :img="item.imgPath"
                 :product="item" 
                 @add-product="$parent.$refs.cart.addProduct"></catalog-item> 
             </div>`
 })
-Vue.component('catalog-item', {
+Vue.component('catalog-product', {
   props: ['product', 'img'],
   template: ` <div class="cat_galery_product">
                             <a href="../single_page.html" class="cat_galery_link">

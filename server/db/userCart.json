@@ -10,11 +10,10 @@
             "img_product": "img/product_9.jpg"
         },
         {
+            "quantity": 1,
             "id_product": 10,
             "product_name": "white t-shirt",
-            "price": 34,
-            "quantity": 1,
-            "img_product": "img/product_10.jpg"
+            "price": 51
         }
     ]
 }

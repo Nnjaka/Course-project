@@ -414,7 +414,7 @@
                     <p class="material"> material: <span class="material_type">cotton</span></p>
                     <p class="designer"> DESIGNER: <span class="designer_type">BINBURHAN</span></p>
                 </div>
-                <p class="collection_price">$561</p>
+                <p class="collection_price">$51</p>
                 <div class="line_collection"></div>
 
                 <div class="collection_choose">
@@ -436,66 +436,14 @@
                         <input class="choose_block choose_block_number" type="number" value="2">
                     </div>
                 </div>
-                <a class="collection_button" href="#"><img src="img/cart_pink.png" alt="cart"
-                        class="collection_button_img">Add to&nbsp;Cart</a>
+                <button-add-to-cart ref="button-add-to-cart">
+                </button-add-to-cart>
             </div>
             <div class="offer">
                 <h2 class="offer_text">you may like also</h2>
 
-                <div class="galery_products center">
-
-                    <div class="galery_product offer_product">
-                        <a href="#" class="galery_link offer_link1">
-                        </a>
-                        <div class="product_info">
-                            <a href="#" class="galery_product_name">BLAZE LEGGINGS</a>
-                            <p class="galery_product_price">$52.00 <img class="product_stars" src="img/stars.png"
-                                    alt="stars">
-                            </p>
-                        </div>
-                        <a class="galery_product_button" href="#"><img src="img/cart_white.png" alt="cart">Add
-                            to&nbsp;Cart</a>
-                    </div>
-
-                    <div class="galery_product">
-                        <a href="#" class="galery_link offer_link2">
-                        </a>
-                        <div class="product_info">
-                            <a href="#" class="galery_product_name">ALEXA SWEATER</a>
-                            <p class="galery_product_price">$52.00 <img class="product_stars" src="img/stars.png"
-                                    alt="stars">
-                            </p>
-                        </div>
-                        <a class="galery_product_button" href="#"><img src="img/cart_white.png" alt="cart">Add
-                            to&nbsp;Cart</a>
-                    </div>
-
-                    <div class="galery_product">
-                        <a href="#" class="galery_link offer_link3">
-                        </a>
-                        <div class="product_info">
-                            <a href="#" class="galery_product_name">AGNES TOP</a>
-                            <p class="galery_product_price">$52.00 <img class="product_stars" src="img/stars.png"
-                                    alt="stars">
-                            </p>
-                        </div>
-                        <a class="galery_product_button" href="#"><img src="img/cart_white.png" alt="cart">Add
-                            to&nbsp;Cart</a>
-                    </div>
-                    <div class="galery_product">
-                        <a href="#" class="galery_link offer_link4">
-                        </a>
-                        <div class="product_info">
-                            <a href="#" class="galery_product_name">SYLVA SWEATER</a>
-                            <p class="galery_product_price">$52.00 <img class="product_stars" src="img/stars.png"
-                                    alt="stars">
-                            </p>
-                        </div>
-                        <a class="galery_product_button" href="#"><img src="img/cart_white.png" alt="cart">Add
-                            to&nbsp;Cart</a>
-                    </div>
-                </div>
-
+                <page-products ref="page-products">
+                </page-products>
             </div>
         </div>
         <footer>
@@ -599,6 +547,8 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ButtonComponent.js"></script>
+    <script src="js/PageComponent.js"></script>
     <script src="js/ProductComponent.js"></script>
     <script src="js/CartComponent.js"></script>
     <script src="js/FilterComp.js"></script>

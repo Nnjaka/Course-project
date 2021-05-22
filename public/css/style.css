@@ -2546,22 +2546,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 72px;
 }
 
-.offer_link1 {
-  background: url(../img/Woman1.png) no-repeat center #e9e9e9;
-}
-
-.offer_link2 {
-  background: url(../img/Woman2.png) no-repeat center #e9e9e9;
-}
-
-.offer_link3 {
-  background: url(../img/Woman3.png) no-repeat center #e9e9e9;
-}
-
-.offer_link4 {
-  background: url(../img/Woman4.png) no-repeat center #e9e9e9;
-}
-
 input[type='number'] {
   -moz-appearance: textfield;
 }
