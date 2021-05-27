@@ -3,11 +3,18 @@
     "countGoods": 2,
     "contents": [
         {
-            "id_product": 9,
-            "product_name": "turquoise t-shirt",
-            "price": 34,
             "quantity": 1,
-            "img_product": "img/product_9.jpg"
+            "id_product": 8,
+            "product_name": "white shorts",
+            "price": 31,
+            "imgPath": "img/8.png"
+        },
+        {
+            "quantity": 1,
+            "id_product": 3,
+            "product_name": "quilted jacket",
+            "price": 52,
+            "imgPath": "img/3.png"
         },
         {
             "quantity": 1,

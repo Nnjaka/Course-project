@@ -82,7 +82,11 @@ Vue.component('cart', {
                     <a href="#"><img src="img/cart.png" alt="cart" class="header_cart" @click="showCart = !showCart"></a>
                     <div class="drop drop_1" v-show="showCart">
                             <div class="drop_col_cart">
-                                <cart-item class="drop_col_product" v-for="item of cartItems" :key="item.id_product" :img="item.imgPath" :cart-item="item" @remove="remove">
+                                <cart-item class="drop_col_product" v-for="item of cartItems" 
+                                :key="item.id_product" 
+                                :img="item.imgPath" 
+                                :cart-item="item" 
+                                @remove="remove">
                                 </cart-item>
                                 <div class="drop_col_total">
                                     <div class="drop_total">Total</div>

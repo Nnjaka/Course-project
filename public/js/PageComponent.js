@@ -34,6 +34,5 @@ Vue.component('page-product', {
                         </div>
                         <a class="galery_product_button" href="javascript://" @click="$emit('add-product', product)"> 
                           <img src="img/cart_white.png" alt="cart">Add to&nbsp;Cart</a>
-                    </div>
-  `
+                    </div>`
 })
