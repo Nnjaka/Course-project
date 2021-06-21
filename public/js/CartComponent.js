@@ -40,6 +40,7 @@ Vue.component('cart', {
                     .then(data => {
                         if (data.result === 1) {
                             this.cartItems.push(prod)
+                            document.location.reload();
                         }
                     })
             }
@@ -65,6 +66,7 @@ Vue.component('cart', {
                     .then(data => {
                         if (data.result === 1) {
                             item.quantity--;
+
                         }
                     });
             } else {
@@ -72,6 +74,7 @@ Vue.component('cart', {
                     .then(data => {
                         if (data.result === 1) {
                             this.cartItems.splice(this.cartItems.indexOf(item), 1);
+
                         }
                     });
             }

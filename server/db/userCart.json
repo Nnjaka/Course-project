@@ -4,10 +4,10 @@
     "contents": [
         {
             "quantity": 1,
-            "id_product": 8,
-            "product_name": "white shorts",
-            "price": 31,
-            "imgPath": "img/8.png"
+            "id_product": 2,
+            "product_name": "pink blouse",
+            "price": 32,
+            "imgPath": "img/2.png"
         },
         {
             "quantity": 1,
@@ -18,9 +18,10 @@
         },
         {
             "quantity": 1,
-            "id_product": 10,
-            "product_name": "white t-shirt",
-            "price": 51
+            "id_product": 4,
+            "product_name": "blouse with a branch print",
+            "price": 35,
+            "imgPath": "img/4.png"
         }
     ]
 }

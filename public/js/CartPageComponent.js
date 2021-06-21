@@ -13,6 +13,20 @@ Vue.component('cart-products', {
         }
       });
   },
+  methods: {
+    updateData(item) {
+
+      this.$parent.$refs.cart.remove(item)
+      this.cartItems.length = 0;
+      this.$parent.getJson(`/api/cart`)
+        .then(data => {
+          for (let item of data.contents) {
+            item.imgPath = `img/${item.id_product}.png`;
+            this.$data.cartItems.push(item);
+          }
+        });
+    }
+  },
   template: `<table class="cart_table conteiner">
                 <tr class="cart_table_header">
                     <th class="table_header" colspan="2">Product Details</th>
@@ -22,11 +36,11 @@ Vue.component('cart-products', {
                     <th class="table_header">Subtotal</th>
                     <th class="table_header">ACTION</th>
                 </tr>
-                <cart-product v-for="item of cartItems"
+                <cart-product v-for="(item, id) in cartItems"
                 :key="item.id_product"
                 :img="item.imgPath"
                 :cart-item="item"
-                @remove="$parent.$refs.cart.remove"></cart-product>
+                @update="updateData"></cart-product>
             </table>`
 })
 Vue.component('cart-product', {
@@ -47,7 +61,7 @@ Vue.component('cart-product', {
                     <td class="table_border table_pr_shipping">FREE</td>
                     <td class="table_border table_pr_subtotal">1</td>
                     <td class="table_border table_pr_action">
-                      <a href="javascript://" @click="$emit('remove', cartItem)">
+                      <a href="javascript://" @click="$emit('update', cartItem)">
                         <i class="fas fa-times-circle"></i></a>
                     </td>
                 </tr>`
